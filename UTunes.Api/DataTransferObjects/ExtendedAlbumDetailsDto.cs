@@ -13,6 +13,6 @@ namespace UTunes.Api.DataTransferObjects
         public ICollection<SongAlbumInfo> Songs { get; set; }
 
         public double AlbumPrice { get; set; }
-        public int Score { get; set; }
+        public double Score { get; set; }
     }
 }

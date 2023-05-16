@@ -57,7 +57,16 @@ namespace UTunes.Infrastructure.Database.DatabaseConfiguration
                 AlbumId = 2,
                 Id = 5,
                 SongPrice=150.00
-            });
+            },
+            new Song
+            {
+                Name = "Danger",
+                Artist = "BTS",
+                AlbumId = 2,
+                Id = 6,
+                SongPrice = 180.00
+            }
+            );
 
         }
     }

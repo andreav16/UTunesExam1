@@ -33,6 +33,13 @@ namespace UTunes.Infrastructure.Database.DatabaseConfiguration
                 Artist = "One Direction",
                 Review = "Lorem ipsum yes dolor sit amet, consectetur adipiscing elit. Aenean sed leo elit. Nullam tellus ipsum, fringilla quis ex vitae, mattis rutrum felis. Duis venenatis faucibus turpis, at tincidunt arcu bibendum ac. Vestibulum eget placerat libero, nec tempus ipsum. Sed elit libero, luctus non dapibus et, sagittis a tellus. Ut suscipit porta vestibulum. Mauris justo velit, pretium at efficitur nec, posuere non massa. Proin quis aliquet quam. Maecenas malesuada mauris ex, eu sollicitudin quam laoreet ut. Sed mollis enim dolor, eu malesuada dui aliquet ut. Quisque rhoncus augue urna, at volutpat justo ultrices et. Vivamus maximus quam non nisl placerat varius. Nam mollis erat ullamcorper diam efficitur, molestie feugiat urna finibus. Phasellus dignissim interdum neque sed dictum.",
                 Id = 2
+            },
+            new Album
+            {
+                Name = "Dark and Wild",
+                Artist = "BTS",
+                Review = "Best band in the world",
+                Id = 3
             });
         }
     }

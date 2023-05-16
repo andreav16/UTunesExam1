@@ -12,7 +12,6 @@ namespace UTunes.Core.Entities
 		public string Review { get; set; }
 
         public ICollection<Song> Songs { get; set; }
-        public int Votes { get; set; }
         public int Likes { get; set; }
         public int Dislikes { get; set; }
 

@@ -13,6 +13,9 @@ namespace UTunes.Core.AlbumManager
         Task<OperationResult<IReadOnlyList<Album>>> GetAllAsync();
 
         OperationResult<AlbumExtended> GetExtendedAlbumInfo(int id);
+        OperationResult<Album> LikeAlbum(int id); 
+        OperationResult<Album> DislikeAlbum(int id);
+        OperationResult<SongAlbumInfo> GetSongById(int id,string songName);
 
     }
 }

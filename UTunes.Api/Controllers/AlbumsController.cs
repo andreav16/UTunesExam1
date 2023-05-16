@@ -30,10 +30,32 @@ public class AlbumsController : UTunesBaseController
     [HttpGet("{id}")]
     public IActionResult GetAlbumById([FromRoute] int id)
     {
-        var result =  this.albumService.GetExtendedAlbumInfo(id);
+        var result = this.albumService.GetExtendedAlbumInfo(id);
         var album = this.mapper.Map<ExtendedAlbumDetailsDto>(result.Result);
         return result.Succeeded ? Ok(album) : GetErrorResult<Core.Entities.AlbumExtended>(result);
 
+    }
+    [HttpPut("{id}/like")]
+    public IActionResult LikeAlbum([FromRoute] int id)
+    {
+        var result = this.albumService.LikeAlbum(id);
+        var album = this.mapper.Map<Album>(result.Result);
+        return result.Succeeded ? Ok(album) : GetErrorResult<Core.Entities.Album>(result);
+    }
+    [HttpPut("{id}/dislike")]
+    public IActionResult DislikeAlbum([FromRoute] int id)
+    {
+        var result = this.albumService.DislikeAlbum(id);
+        var album = this.mapper.Map<Album>(result.Result);
+        return result.Succeeded ? Ok(album) : GetErrorResult<Core.Entities.Album>(result);
+    }
+
+    [HttpGet("{id}/songs/{name}")]
+    public IActionResult GetSongById([FromRoute] int id,string name)
+    {
+        var result = this.albumService.GetSongById(id, name);
+        var song = this.mapper.Map<SongAlbumInfo>(result.Result);
+        return result.Succeeded ? Ok(song) : GetErrorResult<Core.Entities.SongAlbumInfo>(result);
     }
 }
 
