@@ -62,9 +62,17 @@ namespace UTunes.Infrastructure.Database.DatabaseConfiguration
             {
                 Name = "Danger",
                 Artist = "BTS",
-                AlbumId = 2,
+                AlbumId = 3,
                 Id = 6,
                 SongPrice = 180.00
+            },
+            new Song
+            {
+                Name = "Do you think it makes sense?",
+                Artist = "BTS",
+                AlbumId = 3,
+                Id = 7,
+                SongPrice = 253.00
             }
             );
 
